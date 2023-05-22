@@ -131,7 +131,7 @@ $ sudo chown -R $USER:docker /data/asterisk-conf
 
 ![image](https://github.com/zeraimundo/asterisk_docker/assets/82219488/83f78b29-f1c2-4b6f-b12c-9d9c048784cd)
 
-Como estamos utilizando o sistema CentOS 7 para permitir essa configuração se faz necessária a alteração do SELinux, mecanismo de segurança de controle de acesso obrigatório projetado para fornecer uma camada adicional de segurança no sistema operacional Linux.
+Como estamos utilizando o sistema CentOS 7, para permitir essa configuração se faz necessária a alteração do SELinux, mecanismo de segurança de controle de acesso obrigatório projetado para fornecer uma camada adicional de segurança no sistema operacional Linux.
 
 Utilizaremos o seguinte comando “sudo sed -i 's/^SELINUX=.*/SELINUX=permissive/g' /etc/selinux/config”  que desativa permanetemente a aplicação das políticas de segurança do SELinux, colocando-o no modo "Permissive".
 
@@ -221,3 +221,16 @@ Com o contêiner iniciado poderemos acessar a cli do Asterisk através do comand
 ![image](https://github.com/zeraimundo/asterisk_docker/assets/82219488/c8a49a5b-6a86-42e7-ae71-d3f306770dba)
 
 Este tutorial foi criado usando como fonte o site: https://computingforgeeks.com/how-to-run-asterisk-in-docker-container/
+
+
+
+
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=Z1QpZXhCTzA">
+    <img src="https://img.youtube.com/vi/Z1QpZXhCTzA/0.jpg" alt="Tutorial de instalação do Asterisk em container Docker">
+  </a>
+  <br>
+  <a href="https://www.youtube.com/watch?v=Z1QpZXhCTzA">
+    <img src="https://img.shields.io/badge/-Assista%20no%20YouTube-red?style=for-the-badge&logo=youtube&logoColor=white" alt="Assista no YouTube">
+  </a>
+</p>
